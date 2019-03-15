@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.tenactivityapp.R
 import com.example.tenactivityapp.activities.MainActivity
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_button_ten.view.*
 
 class FragmentTen : Fragment(){
@@ -20,7 +21,7 @@ class FragmentTen : Fragment(){
         Log.d(TAG, "onCreateView")
         val view : View = inflater.inflate(R.layout.fragment_button_ten, container, false)
         view.button_back_to_one.setOnClickListener {
-            startActivity(Intent(activity, MainActivity::class.java))
+            Snackbar.make(view, "Olay (get it 'ole' hahaha)", Snackbar.LENGTH_SHORT).show();
         }
         return view
     }
