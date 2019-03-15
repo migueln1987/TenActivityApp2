@@ -8,10 +8,8 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
 import com.example.tenactivityapp.R
 import kotlinx.android.synthetic.main.activity_five.*
 
@@ -19,7 +17,8 @@ class ActivityFive : AppCompatActivity() {
 
     val CHANNEL_ID = "halfway"
     val TAG = "ActivityFive"
-    lateinit var builder :NotificationCompat.Builder
+    val GROUP = "TenActivityApp"
+    lateinit var builder: NotificationCompat.Builder
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,24 +31,28 @@ class ActivityFive : AppCompatActivity() {
             notificationManager.createNotificationChannel(createNotificationChannel())
         }
         notificationManager.notify(1, builder.build())
+        button_to_six.setOnClickListener {
+            startActivity(Intent(this, ActivitySix::class.java))
+        }
     }
 
-    fun notificationStuff (): NotificationCompat.Builder {
+    fun notificationStuff(): NotificationCompat.Builder {
 
         return NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.notification_template_icon_bg)
             .setContentTitle("Halfway Notification")
             .setContentText("You're halfway there")
-            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setGroup(GROUP)
+            .setPriority(NotificationCompat.PRIORITY_MAX)
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    private fun createNotificationChannel() : NotificationChannel {
-            val name = getString(R.string.channel_name)
-            val descriptionText = getString(R.string.channel_description)
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            return NotificationChannel(CHANNEL_ID, name, importance).apply {
-                description = descriptionText
+    private fun createNotificationChannel(): NotificationChannel {
+        val name = getString(R.string.channel_name)
+        val descriptionText = getString(R.string.channel_description)
+        val importance = NotificationManager.IMPORTANCE_HIGH
+        return NotificationChannel(CHANNEL_ID, name, importance).apply {
+            description = descriptionText
         }
     }
 

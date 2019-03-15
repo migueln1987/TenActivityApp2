@@ -1,12 +1,9 @@
 package com.example.tenactivityapp.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import com.example.tenactivityapp.R
-import com.google.android.material.snackbar.Snackbar
 
 class ActivityTen : FragmentActivity() {
 
