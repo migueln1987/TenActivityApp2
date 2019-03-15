@@ -3,6 +3,7 @@
         android:id="@+id/button_to_seven"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:text="@string/go_to_seven">
+        android:text="@string/go_to_seven"
+        android:background="@color/backgroundSix">
 
 </Button>
