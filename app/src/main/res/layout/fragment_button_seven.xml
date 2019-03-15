@@ -3,6 +3,7 @@
         android:layout_width="40dp"
         android:layout_height="300dp"
         android:text="@string/go_to_eight"
-        android:id="@+id/button_to_eight">
+        android:id="@+id/button_to_eight"
+        android:backgroundTint="@color/backgroundEight">
 
 </Button>

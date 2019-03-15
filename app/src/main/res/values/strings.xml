@@ -10,4 +10,6 @@
     <string name="go_to_six">Go To Six</string>
     <string name="go_back_to_the_beginning">Go Back To The Beginning</string>
     <string name="olays_snackbar">Press for Olay\'s snackbar</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="channel_description">Channel Description</string>
 </resources>

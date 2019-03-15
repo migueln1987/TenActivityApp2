@@ -20,6 +20,6 @@
             android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/backgroundOne"
+            android:backgroundTint="@color/backgroundOne"
             android:layout_marginEnd="8dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,8 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline" android:layout_marginEnd="8dp"
             app:layout_constraintHorizontal_bias="0.638" android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="@+id/guideline3" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline2"/>
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+    android:backgroundTint="@color/backgroundFour"/>
     <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
                                                 android:id="@+id/guideline" app:layout_constraintGuide_begin="151dp"
                                                 android:orientation="vertical"/>

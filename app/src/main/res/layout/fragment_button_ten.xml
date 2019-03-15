@@ -3,6 +3,7 @@
         android:id="@+id/button_back_to_one"
         android:text="@string/olays_snackbar"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        android:backgroundTint="@color/backgroundNine"
         android:layout_width="150dp"
         android:layout_height="200dp">
 
