@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 import com.example.tenactivityapp.R
+import com.google.android.material.snackbar.Snackbar
 
 class ActivityTen : FragmentActivity() {
 
@@ -15,7 +16,7 @@ class ActivityTen : FragmentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ten)
         Log.d(TAG, "onCreate")
-        Toast.makeText(this, "You've made it to the end", Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onStart() {
