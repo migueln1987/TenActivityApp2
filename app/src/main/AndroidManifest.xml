@@ -9,23 +9,28 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activities.ActivityTen">
+        <activity android:name=".activities.ActivityTen"
+                  android:screenOrientation="portrait">
         </activity>
         <activity android:name=".activities.ActivityNine">
         </activity>
-        <activity android:name=".activities.ActivityEight">
+        <activity android:name=".activities.ActivityEight"
+                  android:screenOrientation="portrait">
         </activity>
         <activity android:name=".activities.ActivitySeven">
         </activity>
-        <activity android:name=".activities.ActivitySix">
+        <activity android:name=".activities.ActivitySix"
+                  android:screenOrientation="portrait">
         </activity>
         <activity android:name=".activities.ActivityFive">
         </activity>
-        <activity android:name=".activities.ActivityFour">
+        <activity android:name=".activities.ActivityFour"
+                  android:screenOrientation="portrait">
         </activity>
         <activity android:name=".activities.ActivityThree">
         </activity>
-        <activity android:name=".activities.ActivityTwo">
+        <activity android:name=".activities.ActivityTwo"
+        android:screenOrientation="portrait">
         </activity>
         <activity android:name=".activities.MainActivity">
             <intent-filter>
