@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TenActivityApp</string>
+    <string name="go_to_ten">Go To Ten</string>
+    <string name="go_to_nine">Go To Nine</string>
+    <string name="go_to_seven">Go To Seven</string>
+    <string name="go_to_eight">Go To Eight</string>
+    <string name="go_to_three">Go To Three</string>
+    <string name="go_to_four">Go To Four</string>
+    <string name="go_to_five">Go To Five</string>
+    <string name="go_to_six">Go To Six</string>
+</resources>
