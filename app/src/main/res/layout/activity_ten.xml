@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".activities.ActivityTen">
     <fragment
+            android:id="@+id/fragment_ten_button"
             android:name="com.example.tenactivityapp.fragments.FragmentTen"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
